@@ -12,9 +12,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            sh 'docker rm -f my-container'  // Remove the Docker container when the job is done
-        }
-    }
+
 }
